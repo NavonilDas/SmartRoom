@@ -1,5 +1,6 @@
 package com.wificontroller.navonildas.roomcontroller;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -20,7 +21,9 @@ public class MainActivity extends AppCompatActivity {
         rooms.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Toast.makeText(MainActivity.this, ""+i, Toast.LENGTH_SHORT).show();
+                Intent room = new Intent(MainActivity.this,RoomActivity.class);
+                room.putExtra("ROOM_NO",i);
+                startActivity(room);
             }
         });
     }
