@@ -1,0 +1,10 @@
+*.iml
+RoomController/.gradle
+RoomController/local.properties
+RoomController/.idea/libraries
+RoomController/.idea/modules.xml
+RoomController/.idea/workspace.xml
+RoomController/.DS_Store
+RoomController/build
+RoomController/captures
+RoomController/.externalNativeBuild
